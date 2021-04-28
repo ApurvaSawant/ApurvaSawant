@@ -4,7 +4,7 @@ class - .
 tag - tagname{}
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
  :root {
      --primary-color:#3B82F6;
@@ -21,6 +21,8 @@ tag - tagname{}
      margin:2rem 0rem;
  }
 
+ 
+
 .container-fluid{
     padding: 0rem 1rem;
 }
@@ -34,20 +36,31 @@ tag - tagname{}
  .link{
      text-decoration: none;
      padding:0.5rem 1rem;
+     
+     
  }
  .link-primary{
      background-color:var(--primary-color);
      border-radius: 0.5rem;
-     color:white
+     color:white;
+     display: block;
+     max-width: 100px;
+     margin: 1rem 1rem 1rem 0rem;
+     
  }
 
  .link-secondary{
      color:var(--primary-color);
      border-radius: 0.5rem;
      border: 1px solid var(--primary-color);
+     display: block;
+     max-width: 100px;
+     margin: 1rem 1rem 1rem 0rem;
  }
 
  /* look into BEM naming convention for CSS */
+
+ /* list */
 
  .list-non-bullet{
      list-style: none;
@@ -59,10 +72,18 @@ tag - tagname{}
 
  }
 
+ .showcase-list{
+     padding: 2rem;
+     
+}
+
+
  /* Select multiple tags in HTML
  1. select on tag
  2. press ctrl+D for remaining
  3. move with arrow keys, make the changes and save*/
+
+/* navigation */
 
  .navigation{
      background-color:var(--primary-color);
@@ -116,7 +137,7 @@ tag - tagname{}
 
 .section h1{
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 
 }
 
