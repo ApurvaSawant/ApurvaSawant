@@ -1,15 +1,14 @@
-/* Selectors
-id - #
-class - .
-tag - tagname{}
- */
-
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
  :root {
      --primary-color:#3B82F6;
      --dark-gray:#6B7280;
      --off-white:#F3F4F6;
+ }
+
+ *{
+     margin: 0;
+     padding: 0;
  }
 
  body{
@@ -20,8 +19,6 @@ tag - tagname{}
  hr{
      margin:2rem 0rem;
  }
-
- 
 
 .container-fluid{
     padding: 0rem 1rem;
@@ -77,27 +74,23 @@ tag - tagname{}
      
 }
 
-
- /* Select multiple tags in HTML
- 1. select on tag
- 2. press ctrl+D for remaining
- 3. move with arrow keys, make the changes and save*/
-
 /* navigation */
 
  .navigation{
      background-color:var(--primary-color);
-     color:white;
+     color:black;
      padding: 1rem;
  }
 
 
  .navigation .link{
      color:white;
+     font-size: 1.1em;
  }
 
  .navigation .nav-brand{
      font-weight: bold;
+     font-size: 1.5em;
  }
 
 .navigation .nav-pills{
@@ -109,6 +102,9 @@ tag - tagname{}
 }
 
 /* header */
+header{
+    text-align: center;
+}
 
 .hero{
     padding:2rem;
@@ -149,23 +145,31 @@ tag - tagname{}
 
 .footer{
     background-color: var(--primary-color);
-    
     text-align: center;
     color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1.5em;
     
-}
-
-.footer .link{
-    color: white;
-}
-
-.footer ul{
-    padding-inline-start: 40px;
 }
 
 .footer .footer-header{
-    font-size: large;
+    font-size: 1.1em;
     font-weight: bold;
+}
+
+ul{
+    padding: 1em;
+}
+  
+li {
+    display: inline;
+    padding: 0.5em 1.5em;
+    list-style: none;
+}
+  
+i{
+    color: black;
+}
+
+article p{
+    margin: 1em auto;
 }
